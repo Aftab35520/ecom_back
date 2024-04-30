@@ -5,7 +5,7 @@ const parse=require("body-parser")
 const sallerModel=require("./saller")
 const usermodel = require("./user")
 require ("dotenv").config()
-mongoose.connect(process.env.mongo_url)
+mongoose.connect("mongodb+srv://aftab:aftab35520@cluster0.zja2qb6.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=Cluster0")
 
 
 const app=express()
