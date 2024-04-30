@@ -4,8 +4,8 @@ const cors=require("cors")
 const parse=require("body-parser")
 const sallerModel=require("./saller")
 const usermodel = require("./user")
-
-mongoose.connect("mongodb://localhost:27017/ecommerce")
+require ("dotenv").config()
+mongoose.connect(process.env.mongo_url)
 
 
 const app=express()
